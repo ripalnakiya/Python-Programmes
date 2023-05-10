@@ -5,7 +5,6 @@ name = input("Enter your name: ")
 # For existing users
 with open("customers.txt", "r") as file:
     for user in file:
-        print(user)
         if (user[0:-1] == name):
           print(f"Hello {user}, Welcome back!")
           sys.exit()
