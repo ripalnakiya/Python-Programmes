@@ -6,7 +6,7 @@ name = input("Enter your name: ")
 with open("customers.txt", "r") as file:
     for user in file:
         if (user[0:-1] == name):
-          print(f"Hello {user}, Welcome back!")
+          print(f"Hello {user[0:-2]}, Welcome back!")
           sys.exit()
 
 # For new users
@@ -19,4 +19,4 @@ print(f"Hello {name}")
 # This format is better than previous one coz we don't have to close the file explicitly
 with open("customers.txt","a") as file:
     # file.write(name + '\n') We haven't used format string here
-    file.write(f"{name} \n")
+    file.write(f"{name}\n")
