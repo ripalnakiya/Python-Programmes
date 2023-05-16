@@ -16,29 +16,29 @@ Output:
 
 def main():
     n = int(input("Enter the value: "))
-    denominations(n);
+    denominations(n)
 
 
 def denominations(n):
     n1, n2, n3, n4 = 2000, 500, 200, 100
-    
+
     if n <= 1000:
-        d = 1;
+        d = 1
     else:
-        d = 5;
-    
+        d = 5
+
     n = n - (n4*d)
 
-    a = n // n1;
-    n = n % n1;
+    a = n // n1
+    n = n % n1
 
-    b = n // n2;
-    n = n % n2;
+    b = n // n2
+    n = n % n2
 
-    c = n // n3;
-    n = n % n3;
+    c = n // n3
+    n = n % n3
 
-    d = d + n // n4;
+    d = d + n // n4
 
     print(f"{n1} x {a} = {n1*a}")
     print(f"{n2} x {b} = {n2*b}")
