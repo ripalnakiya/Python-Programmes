@@ -15,35 +15,35 @@ Output:
 '''
 
 def main():
-    n = int(input("Enter the value: "))
-    denominations(n)
+    amount = int(input("Enter the value: "))
+    denominations(amount)
 
 
-def denominations(n):
+def denominations(amount):
     n1, n2, n3, n4 = 2000, 500, 200, 100
 
-    if n <= 1000:
+    if amount <= 1000:
         d = 1
     else:
         d = 5
 
-    n = n - (n4*d)
+    amount = amount - (n4*d)
 
-    a = n // n1
-    n = n % n1
+    a = amount // n1
+    amount = amount % n1
 
-    b = n // n2
-    n = n % n2
+    b = amount // n2
+    amount = amount % n2
 
-    c = n // n3
-    n = n % n3
+    c = amount // n3
+    amount = amount % n3
 
-    d = d + n // n4
+    d = d + amount // n4
 
     print(f"{n1} x {a} = {n1*a}")
     print(f"{n2} x {b} = {n2*b}")
     print(f"{n3} x {c} = {n3*c}")
     print(f"{n4} x {d} = {n4*d}")
 
-main()
-
+if __name__ == "__main__":
+    main()
