@@ -1,5 +1,5 @@
 def main():
-    s = Stack()
+    s = stack()
     s.push(10)
     s.push(20)
     print(s.pop())
@@ -7,7 +7,7 @@ def main():
     print(s.pop())
     print(s.isEmpty())
 
-class Stack:
+class stack:
 
     def __init__(self):
         self.arr = []
